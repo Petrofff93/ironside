@@ -1,0 +1,2 @@
+class InvalidCountryException(Exception):
+    pass
