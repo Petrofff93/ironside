@@ -30,6 +30,3 @@ class Area:
     @facility_code.setter
     def facility_code(self, value):
         self.__facility_code = Validator.validate_input_is_string_and_present(value)
-
-
-
