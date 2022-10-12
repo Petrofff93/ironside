@@ -11,5 +11,5 @@ mapper = {
     "LT": "Lithuania",
     "NL": "Netherlands",
     "PL": "Poland",
-    "PT": "Protugal"
+    "PT": "Portugal"
 }
