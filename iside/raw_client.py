@@ -3,6 +3,7 @@ from typing import Optional
 import aiohttp
 
 from iside.area import Area
+from utils.timefilter import time_filter
 from validator import Validator
 
 
@@ -37,4 +38,7 @@ class IsideRawClient:
         end: Optional[datetime] = None,
         limit: Optional[int] = 0,
     ):
+        timefilter = time_filter(start, end, limit)
+
         pass
+

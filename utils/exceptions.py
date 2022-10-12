@@ -4,3 +4,7 @@ class InvalidCountryException(Exception):
 
 class MissingApiKey(Exception):
     pass
+
+
+class MissingData(Exception):
+    pass

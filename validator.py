@@ -1,10 +1,12 @@
 from utils import country_mapper
-from utils.exceptions import InvalidCountryException, MissingApiKey
+from utils.exceptions import InvalidCountryException, MissingApiKey, MissingData
 
 
 class Validator:
     @staticmethod
     def validate_input_is_string_and_present(input_data):
+        if not input_data:
+            raise MissingData("There is missing input data, please check again!")
         if isinstance(input_data, str) and input_data.upper() in country_mapper.mapper:
             return input_data
 
