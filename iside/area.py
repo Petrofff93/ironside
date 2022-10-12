@@ -13,7 +13,7 @@ class Area:
 
     @country_code.setter
     def country_code(self, value):
-        self.__country_code = Validator.validate_input_is_string_and_present(value)
+        self.__country_code = Validator.validate_country_code_is_string_and_present(value)
 
     @property
     def company_code(self):
@@ -21,7 +21,7 @@ class Area:
 
     @company_code.setter
     def company_code(self, value):
-        self.__company_code = Validator.validate_input_is_string_and_present(value)
+        self.__company_code = Validator.validate_company_code_facility_code_are_present(value)
 
     @property
     def facility_code(self):
@@ -29,4 +29,4 @@ class Area:
 
     @facility_code.setter
     def facility_code(self, value):
-        self.__facility_code = Validator.validate_input_is_string_and_present(value)
+        self.__facility_code = Validator.validate_company_code_facility_code_are_present(value)

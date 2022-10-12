@@ -8,3 +8,11 @@ class MissingApiKey(Exception):
 
 class MissingData(Exception):
     pass
+
+
+class AccessDeniedException(Exception):
+    pass
+
+
+class InvalidTimeFilter(Exception):
+    pass
